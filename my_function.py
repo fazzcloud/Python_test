@@ -22,3 +22,47 @@ def quadratic(a, b, c):
         x2 = (-b - math.sqrt( b**2 - 4*a*c )) / ( 2*a )
         return x,x2
 
+#求平方
+def power(x,y=2):
+    return x ** y
+
+def enschool(name,gender,age = 18,city = 'nj'):
+    print("name:",name)
+    print("gender:",gender)
+    print("age:", age)
+    print("city:", city)
+
+#默认参数-list
+def add_end(L = []):
+    L.append('end')
+    return  L
+
+def calc(*numbers):
+    sum = 0
+    for n in  numbers:
+        sum = sum + n*n
+    return sum
+
+def person(name,age,*args,city,job):
+    print('name:',name,'age:',age,args,'city',city,'job',job)
+
+#计算乘积
+def mul(*args):
+    s = 1
+    if len(args) == 0:
+        print("请输入值")
+    for n in args:
+        s = n*s
+    return s
+
+#去除首尾空格
+def trim(s):
+    print(s.strip(' '))  #strip方法去除首尾空格
+
+
+#迭代出最小和最大值，并以tuple的方式返回
+def findMinAndMix(L):
+
+    print("最大值为：",max(L))
+    print("最小值为：", min(L))
+
