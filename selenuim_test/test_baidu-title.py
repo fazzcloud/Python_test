@@ -38,4 +38,5 @@ print(driver.title) #打印当前页面标题
 
 driver.switch_to.window(mainWindow) #切回主句柄
 print(driver.title)
-#driver.quit()
+time.sleep(3)
+driver.quit()
