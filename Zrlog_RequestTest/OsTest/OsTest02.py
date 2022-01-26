@@ -1,0 +1,23 @@
+import os
+#获取当前文件所在目录下，所有文件
+print(os.listdir())
+#获取指定盘的所有文件和目录列表，并以列表的形式展示
+print(os.listdir("D:\\Pycharm\\"))
+#在当前目录下创建一个目录
+#os.mkdir("testcase")
+#在指定目录下创建一个目录
+#os.mkdir("D:\\testcase02")
+#删除一个空目录
+#os.rmdir("testcase")
+#删除指定盘中的空目录
+#os.rmdir("D:\\testcase02")
+#删除指定文件
+#os.remove("D:\\testcase02\\新建文本文档.txt")
+#重命名当前目录下文件
+#os.rename("1.txt","12.txt")
+#重命名当前路径下的目录
+#os.rename("testcase2","testcase3")
+#重命名指定路径下目录
+#os.rename("D:\\testcase02","D:\\testcase03")
+#重命名指定路径下文件
+os.rename("D:\\testcase03\\1.txt","D:\\testcase03\\2.txt")
